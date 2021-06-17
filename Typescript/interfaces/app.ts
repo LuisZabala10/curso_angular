@@ -2,7 +2,7 @@
 
     interface Xmen{
         nombre : string;
-        edad :number;
+        edad : number;
     }
 
     const enviarMision = (xmen:Xmen) =>{
@@ -15,6 +15,5 @@
     };
 
     enviarMision(wolverine);
-
 
 })()
