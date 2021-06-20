@@ -16,41 +16,49 @@
       </thead>
 
       <tbody>
+
         <tr>
           <td>{{nombre}}</td>
           <td>uppercase</td>
           <td>{{nombre|uppercase}}</td>
         </tr>
+
         <tr>
           <td>{{nombre}}</td>
           <td>lowercase</td>
           <td>{{nombre|lowercase}}</td>
         </tr>
+
         <tr>
           <td>{{nombre}}</td>
           <td>slice:3</td>
           <td>{{nombre|slice:3}}</td>
         </tr>
+
         <tr>
           <td>{{nombre}}</td>
           <td>slice:3</td>
           <td>{{nombre|slice:0:3}}</td>
         </tr>
+
         <tr>
           <td>{{arreglo}}</td>
           <td>slice1:3</td>
           <td>{{arreglo|slice:1:5}}</td>
         </tr>
+
         <tr>
           <td>{{PI}}</td>
           <td>number:'3.0-0'</td>
           <td>{{PI | number:'3.0-0'}}</td>
         </tr>
+
         <tr>
           <td>{{PI}}</td>
           <td>number:'.0-2'</td>
           <td>{{PI | number:'.0-2'}}</td>
         </tr>
+
         <tr>
           <td>{{porcentaje}}</td>
           <td>percent</td>
@@ -79,13 +87,24 @@
 
     </table>
 
-    <h4>Slice <small>slice:1:4</small></h4>
+    <h3>Slice <small>slice:1:4</small></h3>
 
     <ul class="list-group">
       <li class="list-group-item" *ngFor="let item of personaje | slice:1:4">
         {{item}}
       </li>
     </ul>
+
+    <h3>Json</h3>
+    
+    <div class="row mb-5">
+      <div class="col">
+        <pre>
+          {{heroe | json}}
+        </pre>
+
+      </div>
+    </div>
 
   </div>
 
