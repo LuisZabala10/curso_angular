@@ -20,12 +20,13 @@ export class AppComponent {
 
   salario: number = 1234.5;
 
+  fecha : Date =new Date();
+
   valorPromesa = new Promise<string>((resolve,reject)=>{
     setTimeout(()=>{
       resolve('Llego la  data');
     },4500);
   });
-
 
   heroe={
     nombre:'Logan',
