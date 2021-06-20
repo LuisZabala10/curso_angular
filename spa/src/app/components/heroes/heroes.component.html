@@ -1,1 +1,8 @@
-<p>heroes works!</p>
+<h1>Héroes <small>Marvel y DC</small></h1>
+<hr>
+
+<div class="row row-cols-1 row-cols-md-3">
+
+    <app-heroe-tarjeta (hereoSeleccionado)="verHeroe($event)" [index]="i" [heroe]="heroe" *ngFor="let heroe of heroes; let i = index"></app-heroe-tarjeta>
+
+</div>

@@ -1,0 +1,13 @@
+<div class="col mb-4 animated fadeIn fast" >
+    <div class="card">
+        <img [src]="heroe.img" class="card-img-top" alt="Imagen de {{heroe.nombre}}">
+        <div class="card-body">
+            <h5 class="card-title">{{heroe.nombre}}</h5>
+            <p class="card-text">{{heroe.bio}}.</p>
+            <p class="card-text"><small class="text-muted">{{heroe.aparicion}}</small></p>
+
+            <button class="btn btn-block btn-outline-primary" (click)="verHeroe()">Ver más.....</button>
+            <!-- <a [routerLink]="['/heroe',i]" class="btn btn-block btn-outline-primary">Ver más.....</a> -->
+        </div>
+    </div>
+</div>
