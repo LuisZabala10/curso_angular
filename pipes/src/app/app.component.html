@@ -103,8 +103,20 @@
 
         <tr>
           <td>{{fecha}}</td>
-          <td>date:'MMM-dd'</td>
-          <td>{{fecha|date:'fullDate'}}</td>
+          <td>MMMM-dd</td>
+          <td>{{fecha|date:'MMMM-dd'}}</td>
+        </tr>
+
+        <tr>
+          <td>{{fecha}}</td>
+          <td>date:'MMMM-dd':'':'{{idioma}}'</td>
+          <br>
+
+          <button class="mr-1 btn btn-primary" (click)="cambiarIdioma('es')">Español</button>
+          <button class="mr-1 btn btn-success" (click)="cambiarIdioma('en')">Inglés</button>
+          <button class="mr-1 btn btn-danger" (click)="cambiarIdioma('fr')">Frances</button>
+
+          <td>{{fecha|date:'MMMM-dd':'': idioma}}</td>
         </tr>
 
       </tbody>
