@@ -125,6 +125,17 @@
           <td>{{fecha|date:'MMMM-dd':'': idioma}}</td>
         </tr>
 
+        <tr>
+          <td>{{nombre}}</td>
+          <td>constrasena:{{activar}}</td>
+          <td>
+            {{nombre|constrasena:activar}}
+            <br>
+            <button (click)="activar= !activar" class="btn btn-outline-primary">Activar/Desactivar</button>
+          </td>
+
+        </tr>
+
       </tbody>
 
     </table>
