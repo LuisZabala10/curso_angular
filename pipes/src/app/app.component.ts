@@ -25,6 +25,8 @@ export class AppComponent {
 
   idioma: string = 'es';
 
+  videoUrl: string = 'https://www.youtube.com/embed/BCUHCYBwstI';
+
   valorPromesa = new Promise<string>((resolve,reject)=>{
     setTimeout(()=>{
       resolve('Llego la  data');
